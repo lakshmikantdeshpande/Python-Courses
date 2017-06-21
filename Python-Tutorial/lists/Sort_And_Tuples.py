@@ -7,3 +7,7 @@ print(sorted('loocat'))
 peed = (3, 5, 8, 9)
 print(peed)
 print(peed[1])
+
+# tuple is immutable like Strings in Java
+tupe = ('1')
+print(tupe)

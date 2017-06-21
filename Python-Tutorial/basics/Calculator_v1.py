@@ -1,13 +1,14 @@
 # Simple calculator using basic Python
 import math
 
-x = input("Enter first number: ")
-y = input("Enter second number: ")
+x = int(input("Enter first number: "))
+y = int(input("Enter second number: "))
 
 print("Addition: " + str(x + y))
 print("Subtraction: " + str(x - y))
 print("Multiplication: " + str(x * y))
 print("Division: " + str(x / y))
+print("Floor Division: " + str(x // y))
 print("Power: " + str(x ** y))
 print("Modulus: " + str(x % y))
 print("Square Root: " + str(math.sqrt(x)))

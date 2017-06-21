@@ -13,3 +13,13 @@ print(sachin.lower())
 print(sachin.capitalize())
 
 print(sachin.replace('your', 'my'))
+
+# raw string (Ignores control characters)
+print(r'C:\temp')
+
+string = """"This is a simple lonnggg string which has spans across multiple lines, and consists of TABs and NEWLINE 
+characters"""
+
+print(string)
+
+print(u'string')
