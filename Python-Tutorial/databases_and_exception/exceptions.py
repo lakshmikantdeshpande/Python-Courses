@@ -1,7 +1,7 @@
 def divide_by_zero(num):
     try:
         num = num / 0
-    except:
+    except ZeroDivisionError:
         print("Cannot divide by zero")
 
 

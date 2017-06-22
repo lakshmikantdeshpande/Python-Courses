@@ -10,6 +10,10 @@ print(y)
 
 #
 # import sys
+# OR
+# import sys as s
+# OR
+# from sys import stdout
 #
 # # Simple input output in Python
 # remember, we can rename functions temporarily

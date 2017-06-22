@@ -1,4 +1,4 @@
-import MySQLdb
+import pymysql
 
 # global variables
 HOST = "localhost"
@@ -8,7 +8,7 @@ DB = "pythondb"
 
 
 def connect():
-    db = MySQLdb.connect(HOST, USER, PASS, DB)
+    db = pymysql.connect(HOST, USER, PASS, DB)
     return db
 
 
@@ -35,7 +35,7 @@ def create_table(db):
              SEX CHAR(1),
              INCOME FLOAT )"""
     cursor.execute(sql)
-    print ("A fresh table is created")
+    print("A fresh table is created")
 
 
 # Insert data in the table

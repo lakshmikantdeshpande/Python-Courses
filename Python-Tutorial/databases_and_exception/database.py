@@ -1,7 +1,7 @@
 # simple connection with MySQL database
-import MySQLdb
+import pymysql
 
-db = MySQLdb.connect('localhost', 'root', 'root', 'pythondb')
+db = pymysql.connect('localhost', 'root', 'root', 'pythondb')
 
 cursor = db.cursor()
 
