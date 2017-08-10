@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<a>
+    <b>
+        <c>bc</c>
+        <d>
+            <e>
+                bde
+            </e>
+        </d>
+        <f>bf</f>
+    </b>
+</a>
