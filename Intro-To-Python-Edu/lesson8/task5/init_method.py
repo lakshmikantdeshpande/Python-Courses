@@ -7,7 +7,8 @@ square = Square()
 print(square.sides)
 
 class Car:
-    def __init__(add parameters here):
+    color = "blue"
+    def __init__(self, color):
         self.color = color
 
 car = Car("blue")    # Note: you should not pass self parameter explicitly, only color parameter
