@@ -1,9 +1,29 @@
 # put your python code here
-def compare(A, B, values):
-    if values[A] >= values[B]:
-        return 0
-    else:
-        return -1
+def compare(A, B):
+    return A >= B
+
+
+def romanToDecimal(str, values):
+    i = 0
+    result = 0
+
+    while (i < len(str)):
+        digit1 = values[str[i]]
+
+        if (i + 1 < len(str)):
+            digit2 = values[str[i + 1]]
+            if compare(digit1, digit2):
+                # digit1 >= digit2
+                result = result + digit1
+                i = i + 1
+            else:
+                result = result + digit2 - digit1
+                i = i + 2
+        else:
+            result = result + digit1
+            i = i + 1
+
+    return result
 
 
 if __name__ == "__main__":
@@ -15,19 +35,4 @@ if __name__ == "__main__":
               'D': 500,
               'M': 1000}
     string = input().strip()
-
-    i = 0
-    temp = 0
-    found = False
-    while i < len(string) - 1:
-        diff = compare(string[i], string[i + 1], values)
-        if diff is 0:
-            temp += values[string[i]]
-        else:
-            found = True
-            temp += values[string[i + 1]] - values[string[i]]
-            i += 1
-        i += 1
-    if not found:
-        temp += values[string[len(string) - 1]]
-    print(temp)
+    print(str(romanToDecimal(string, values)))
