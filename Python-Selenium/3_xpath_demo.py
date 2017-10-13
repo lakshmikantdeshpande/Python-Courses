@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 
 user = "asdfads@sadfas.com"
 
-driver = webdriver.Chrome("/usr/local/chromedriver-Linux64")
+driver = webdriver.Chrome()
 driver.get("http://demo.guru99.com/")
 assert "99" in driver.title
 

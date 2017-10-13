@@ -1,7 +1,7 @@
 import time 
 from selenium import webdriver
 
-driver = webdriver.Chrome("/usr/local/chromedriver-Linux64")
+driver = webdriver.Chrome()
 driver.get("http://www.google.com/xhtml")
 time.sleep(5)
 search_box = driver.find_element_by_name('q')
