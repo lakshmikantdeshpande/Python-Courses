@@ -10,3 +10,8 @@ if __name__ == "__main__":
 	numsquare = sq(num)
 	print(numsquare)
 
+	# map is a higher order function (Functional Programming)
+	numbers = [1, 2, 3, 4]
+	numbers_squares = list(map(square, numbers))
+	print(numbers_squares)
+
