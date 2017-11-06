@@ -5,22 +5,23 @@ def square(number):
 
 
 def sqrt(number):
-	return sqrtHelper(1.0, number)
+
+	def sqrtHelper(guess):
+		if (closeEnough(guess)):
+			return guess
+		else:
+			return sqrtHelper(improve(guess))
 
 
-def sqrtHelper(guess, number):
-	if (closeEnough(guess, number)):
-		return guess
-	else:
-		return sqrtHelper(improve(guess, number), number)
+	def closeEnough(guess):
+		return (math.fabs((square(guess)) - number) < 0.001)
 
 
-def closeEnough(guess, number):
-	return (math.fabs((square(guess)) - number) < 0.001)
+	def improve(guess):
+		return average(guess, (number / guess))
 
 
-def improve(guess, x):
-	return average(guess, (x / guess))
+	return sqrtHelper(1.0)
 
 
 def average(x, y):
